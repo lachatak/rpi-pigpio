@@ -1,3 +1,4 @@
-
-docker image for pigpio deamon
-http://abyz.co.uk/rpi/pigpio/index.html
+- docker image for pigpio deamon
+- http://abyz.co.uk/rpi/pigpio/index.html
+- docker build -t rpi-pigpio .
+- docker run -it --cap-add SYS_RAWIO --device /dev/mem --device /dev/vcio -p 8888:8888 rpi-pigpio
